@@ -1,4 +1,0 @@
-- [返回上一级 [.]](./_sidebar.md)
-- [SSO对接](SSO对接/)
-  - [控制台SSO](SSO对接/控制台SSO/)
-    - [控制台SSO快速登录](SSO对接/控制台SSO/控制台SSO快速登录.md)
