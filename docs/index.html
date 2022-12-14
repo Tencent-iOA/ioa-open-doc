@@ -1,50 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<meta name="description" content="Description">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+  <!--
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  -->
+
+  <!-- Theme: Simple (latest v0.x.x) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="//unpkg.com/mermaid/dist/mermaid.min.css">
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+
+  <style>
+    :root {
+      /* Reduce the font size */
+      /*--base-font-size: 14px;*/
+
+      /* Change the theme color hue */
+      /*--theme-hue: 325;*/
+
+      /* Change the sidebar bullets */
+      /*--sidebar-nav-link-before-content: '😀';*/
+
+      /*tab config*/
+      --docsifytabs-border-color: #ededed;
+      --docsifytabs-tab-highlight-color: purple;
+    }
+  </style>
 </head>
 <body>
-	<div id="app"></div>
-	<script>
-		window.$docsify = {
-			name: 'iOA开放文档',
-			repo: '',
-			loadSidebar: true,
-			loadNavbar: true,
-			formatUpdated: '{YYYY}-{MM}-{DD} {HH}:{mm}:{ss}',
-			plugins: [
-				function (hook, vm) {
-					hook.beforeEach(function (html) {
-						return (
-							html + '<hr />' + '<i class="fas fa-copyright"></i>' + '<span style="font-size:14px;margin:auto;">' + 'iOA团队提供, 最近更新时间 {docsify-updated}' + '</span>'
-							);
-						}
-						);
-					}
-			],
-			//字数统计
-			count:{
-				countable: true,
-				position: 'top',
-				margin: '10px',
-				float: 'right',
-				fontsize:'0.9em',
-				color:'rgb(90,90,90)',
-				language:'chinese',
-				localization: {
-					words: "",
-					minute: ""
-				},
-				isExpected: true
-			}
-		}
-	</script>
-	<!-- Docsify v4 -->
-	<script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+<div id="app">Loading...</div>
+<script>
+  window.$docsify = {
+    // 完整配置参数
+    search: {
+      maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+      placeholder: '搜索',
+      noData: '找不到结果!',
+      // 搜索标题的最大层级, 1 - 6
+      depth: 6,
+      hideOtherSidebarContent: false, // 是否隐藏其他侧边栏内
+    },
+
+    //设置首页文件加载路径。适合不想将README.md作为入口文件渲染
+    //homepage: 'home.md',
+
+    //侧边栏
+    loadSidebar: true,
+    //同时设置 loadSidebar 和 autoHeader 后，可以根据 _sidebar.md 的内容自动为每个页面增加标题
+    autoHeader: true,
+    //在侧边栏中出现的网站图标，你可以使用CSS来更改大小
+    //logo: '/_media/bgicon1.png',
+    //文档标题，会显示在侧边栏顶部。name 项也可以包含自定义 HTML 代码来方便地定制
+    name: 'iOA开放文档',
+    //点击文档标题后跳转的链接地址
+    //nameLink: '/',
+    // 按照路由切换
+    //nameLink: {
+    //  '/': '/',
+    //},
+
+    //导航栏
+    loadNavbar: true,
+
+    //替换主题色
+    themeColor: '#3F51B5',
+
+    //右上角GitHub Corner挂件
+    //repo: '',
+
+    //从文档中抓取标题渲染成目录，最大层级
+    maxLevel: 4,
+
+    //自定义侧边栏后默认不会再生成目录，通过此参数开启
+    subMaxLevel: 4,
+
+    //切换页面后是否自动跳转到页面顶部
+    auto2top: true,
+
+    //启用相对路径
+    //relativePath: true,
+
+    //在找不到指定页面时加载_404.md
+    notFoundPage: true,
+
+    //锚点对齐标题栏,距离页面顶部有一定空间
+    topMargin: 90, // default: 0
+
+    formatUpdated: '{YYYY}-{MM}-{DD} {HH}:{mm}:{ss}',
+
+    plugins: [
+      function (hook, vm) {
+        hook.beforeEach(function (html) {
+          return (
+                  html + '<hr />' + '<i class="fas fa-copyright"></i>' + '<span style="font-size:14px;margin:auto;">' + 'iOA团队提供, 最近更新时间 {docsify-updated}' + '</span>'
+          );
+        });
+      },
+      // function(hook, vm) {
+      //   hook.ready(function () {
+      //     mermaid.initialize({startOnLoad: false});
+      //   });
+      //   hook.doneEach(function () {
+      //     mermaid.init(undefined,'.mermaid');
+      //   });
+      // }
+      //DocsifyCodefund.create('51d43327-eea3-4e27-bd44-e075e67a84fb') // 把这个id改成你的codefund id
+      //DemoBoxVue.create(jsResources, cssResources, bootCode)
+    ],
+
+    // markdown: {
+    //   renderer: {
+    //     code: function(code, lang) {
+    //       var html = '';
+    //       if(code.match(/^sequenceDiagram/) || code.match(/^graph/) || code.match(/^gantt/)){
+    //         html = '<div class="mermaid">' + code + '</div>';
+    //       }
+    //       var hl = Prism.highlight(code, Prism.languages[lang] || Prism.languages.markup)
+    //       return html + '<pre v-pre data-lang="' + lang + '"><code class="lang-' + lang + '">' + hl + '</code></pre>'
+    //     }
+    //   }
+    // },
+
+    // 复制代码到剪贴板
+    copyCode: {
+      buttonText : '点击复制',
+      errorText  : '错误',
+      successText: '复制'
+    },
+
+    //评论
+    //disqus: 'iOA-API',
+
+    //分页机制
+    pagination: {
+      previousText: '上一章节',
+      nextText: '下一章节',
+      crossChapter: true,
+      crossChapterText: true,
+    },
+
+    //字数统计
+    count:{
+      countable: true,
+      position: 'top',
+      margin: '10px',
+      float: 'right',
+      fontsize:'0.9em',
+      color:'rgb(90,90,90)',
+      language:'chinese',
+      localization: {
+        words: "",
+        minute: ""
+      },
+      isExpected: true
+    },
+
+    //docsify-themeable plugin
+    themeable: {
+      readyTransition : true, // default
+      responsiveTables: true  // default
+    },
+
+    //定义路由别名，可以更自由的定义路由规则。 支持正则。
+     alias: {
+       '/.*/_sidebar.md': '/_sidebar.md',
+       '/.*/README.md': '/README.md'
+     },
+
+    //tabs
+    tabs: {
+      persist    : true,      // default
+      sync       : true,      // default
+      theme      : 'classic', // default classic, material, false
+      tabComments: true,      // default
+      tabHeadings: true       // default
+    },
+
+    //文档加载的根路径，可以是二级路径，或其它域名的路径
+    //basePath: '/path/',
+
+    //小屏设备下合并导航栏到侧边栏。
+    //mergeNavbar: true,
+  }
+</script>
+<!-- Docsify v4 -->
+<script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+<script src="//polyfill.io/v3/polyfill.min.js?features=String.prototype.normalize"></script>
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/disqus.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+<script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+<script src="//unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/docsify-demo-box-vue@{version}/dist/docsify-demo-box-vue.min.js"></script>
+
+<!--mermaid-->>
+<!-- <script type="text/javascript" src="//unpkg.com/mermaid/dist/mermaid.min.js"></script> -->
+<script src="//unpkg.com/mermaid/dist/mermaid.js"></script>
+<script src="//unpkg.com/docsify-mermaid@latest/dist/docsify-mermaid.js">
+
+  <script>mermaid.initialize({ startOnLoad: true });</script>
+
+<!-- docsify-themeable (latest v0.x.x) -->
+<script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
+
+<!-- docsify-tabs (latest v1.x.x) -->
+<script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+
+<!--Prism highlight code-->>
+<script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-go.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-markdown.min.js"></script>
+
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/v4-shims.js"></script>
+
+<script>
+  (function() {
+    function loadJS(src, attrs) {
+      document.write(
+              '<script src="' + src + '" ' + (attrs || '') + '><\/script>'
+      );
+    }
+
+    // Public site only
+    if (/docsify/.test(location.host)) {
+      loadJS('//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/ga.min.js');
+      loadJS('//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/matomo.min.js');
+    }
+  })();
+</script>
 </body>
 </html>
