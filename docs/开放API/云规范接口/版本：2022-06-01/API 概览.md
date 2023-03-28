@@ -6,6 +6,13 @@
 | [DescribeDevice](/document/product/1679/76870?!preview&preview_docmenu=1&lang=cn&!document=1) | 查询设备详情 | 产品内部展示 |
 | [DescribeDevices](/document/product/1679/76990?!preview&preview_docmenu=1&lang=cn&!document=1) | 查询多台设备详情 | 产品内部展示 |
 
+## 资源授权相关接口
+
+| 接口名称 | 接口功能 | 可见状态 |
+|-|-|-|
+| [DescribeAccountBindDevices](/document/product/1679/88423?!preview&preview_docmenu=1&lang=cn&!document=1) | 获取账号绑定设备列表 | 产品内部展示 |
+| [RemoveAccountBindDevice](/document/product/1679/88422?!preview&preview_docmenu=1&lang=cn&!document=1) | 删除账号绑定设备 | 产品内部展示 |
+
 ## 身份与权限管理相关接口
 
 | 接口名称 | 接口功能 | 可见状态 |
@@ -56,4 +63,12 @@
 | 接口名称 | 接口功能 | 可见状态 |
 |-|-|-|
 | [DescribePublicEncryptKey](/document/product/1679/77383?!preview&preview_docmenu=1&lang=cn&!document=1) | 获取加密公钥 | 产品内部展示 |
+
+## 准入相关接口
+
+| 接口名称 | 接口功能 | 可见状态 |
+|-|-|-|
+| [CreateBatchMacWhite](/document/product/1679/76862?!preview&preview_docmenu=1&lang=cn&!document=1) | 批量添加MAC白名单 | 产品内部展示 |
+| [CreateBatchSwitchDevice](/document/product/1679/76860?!preview&preview_docmenu=1&lang=cn&!document=1) | 批量添加交换机 | 产品内部展示 |
+| [DescribeSwitchDeviceGroups](/document/product/1679/76861?!preview&preview_docmenu=1&lang=cn&!document=1) | 查询交换机分组信息 | 产品内部展示 |
 
