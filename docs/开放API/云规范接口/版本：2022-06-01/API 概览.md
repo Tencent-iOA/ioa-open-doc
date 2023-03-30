@@ -11,7 +11,7 @@
 | 接口名称 | 接口功能 | 可见状态 |
 |-|-|-|
 | [DescribeAccountBindDevices](/document/product/1679/88423?!preview&preview_docmenu=1&lang=cn&!document=1) | 获取账号绑定设备列表 | 产品内部展示 |
-| [RemoveAccountBindDevice](/document/product/1679/88422?!preview&preview_docmenu=1&lang=cn&!document=1) | 删除账号绑定设备 | 产品内部展示 |
+| [RemoveAccountBindDevice](/document/product/1679/88422?!preview&preview_docmenu=1&lang=cn&!document=1) | 移除账号绑定设备 | 产品内部展示 |
 
 ## 身份与权限管理相关接口
 
