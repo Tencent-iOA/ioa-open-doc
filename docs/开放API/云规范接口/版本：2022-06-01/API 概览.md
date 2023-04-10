@@ -1,18 +1,3 @@
-## 终端资产管理相关接口
-
-| 接口名称 | 接口功能 | 可见状态 |
-|-|-|-|
-| [CreatePrivilegeCode](/document/product/1679/81879?!preview&preview_docmenu=1&lang=cn&!document=1) | 创建特权码 | 产品内部展示 |
-| [DescribeDevice](/document/product/1679/76870?!preview&preview_docmenu=1&lang=cn&!document=1) | 查询设备详情 | 产品内部展示 |
-| [DescribeDevices](/document/product/1679/76990?!preview&preview_docmenu=1&lang=cn&!document=1) | 查询多台设备详情 | 产品内部展示 |
-
-## 资源授权相关接口
-
-| 接口名称 | 接口功能 | 可见状态 |
-|-|-|-|
-| [DescribeAccountBindDevices](/document/product/1679/88423?!preview&preview_docmenu=1&lang=cn&!document=1) | 获取账号绑定设备列表 | 产品内部展示 |
-| [RemoveAccountBindDevice](/document/product/1679/88461?!preview&preview_docmenu=1&lang=cn&!document=1) | 解除账号绑定设备 | 产品内部展示 |
-
 ## 身份与权限管理相关接口
 
 | 接口名称 | 接口功能 | 可见状态 |
@@ -58,12 +43,6 @@
 | [SaveAccountResources](/document/product/1679/77533?!preview&preview_docmenu=1&lang=cn&!document=1) | 保存账户资源 | 产品内部展示 |
 | [SaveVirtualGroupResources](/document/product/1679/77531?!preview&preview_docmenu=1&lang=cn&!document=1) | 保存账户虚拟组资源 | 产品内部展示 |
 
-## 公共模块相关接口
-
-| 接口名称 | 接口功能 | 可见状态 |
-|-|-|-|
-| [DescribePublicEncryptKey](/document/product/1679/77383?!preview&preview_docmenu=1&lang=cn&!document=1) | 获取加密公钥 | 产品内部展示 |
-
 ## 准入相关接口
 
 | 接口名称 | 接口功能 | 可见状态 |
@@ -71,4 +50,20 @@
 | [CreateBatchMacWhite](/document/product/1679/76862?!preview&preview_docmenu=1&lang=cn&!document=1) | 批量添加MAC白名单 | 产品内部展示 |
 | [CreateBatchSwitchDevice](/document/product/1679/76860?!preview&preview_docmenu=1&lang=cn&!document=1) | 批量添加交换机 | 产品内部展示 |
 | [DescribeSwitchDeviceGroups](/document/product/1679/76861?!preview&preview_docmenu=1&lang=cn&!document=1) | 查询交换机分组信息 | 产品内部展示 |
+
+## 资产管理相关接口
+
+| 接口名称 | 接口功能 | 可见状态 |
+|-|-|-|
+| [CreatePrivilegeCode](/document/product/1679/81879?!preview&preview_docmenu=1&lang=cn&!document=1) | 创建特权码 | 产品内部展示 |
+| [DescribeDevices](/document/product/1679/76990?!preview&preview_docmenu=1&lang=cn&!document=1) | 查询多台设备详情 | 产品内部展示 |
+| [DescribeDevice](/document/product/1679/76870?!preview&preview_docmenu=1&lang=cn&!document=1) | 查询设备详情 | 产品内部展示 |
+| [DescribeAccountBindDevices](/document/product/1679/88423?!preview&preview_docmenu=1&lang=cn&!document=1) | 获取账号绑定设备列表 | 产品内部展示 |
+| [RemoveAccountBindDevice](/document/product/1679/88461?!preview&preview_docmenu=1&lang=cn&!document=1) | 解除账号绑定设备 | 产品内部展示 |
+
+## 公共模块相关接口
+
+| 接口名称 | 接口功能 | 可见状态 |
+|-|-|-|
+| [DescribePublicEncryptKey](/document/product/1679/77383?!preview&preview_docmenu=1&lang=cn&!document=1) | 获取加密公钥 | 产品内部展示 |
 
