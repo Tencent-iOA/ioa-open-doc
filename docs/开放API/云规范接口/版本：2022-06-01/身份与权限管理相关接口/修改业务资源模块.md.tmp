@@ -1,0 +1,68 @@
+## 1. 接口描述
+
+
+
+
+修改业务资源模块名称，不允许系统中在存同名称的资源模块
+
+## 2. 输入参数
+
+
+| 参数名称 | 必选 | 类型 | 描述 |
+|---------|---------|---------|---------|
+| AreaId | 是 | Integer | 修改业务模块的id，传入的参数必需大于0的整数 |
+| AreaName | 是 | String | 修改业务模块的名称，参数不能为空，系统中不允许同名的资源模块 |
+
+## 3. 输出参数
+
+| 参数名称 | 类型 | 描述 |
+|---------|---------|---------|
+| RequestId | String | 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。|
+
+## 4. 示例
+
+### 示例1 修改业务资源模块
+
+#### 输入示例
+
+```
+Path : /capi/GatewayResource/ModifyResourceModule
+
+<body>
+{
+    "AreaId":119,
+    "AreaName":"模块名"
+}
+```
+
+#### 输出示例
+
+```
+{
+    "Response": {
+        "Data": null,
+        "RequestId": "1658370362.2947376"
+    }
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+## 5. 错误码
+
+
+| 错误码 | 描述 |
+|---------|---------|
+| InternalError.DatabaseException | 内部错误，数据库异常。 |
+| InvalidParameter.DuplicateModuleName | 存在重复资源模块名称。 |
+| InvalidParameter.RequestParam | 请求参数错误。 |
+| UnauthorizedOperation.NoModulePermissions | 没有模块权限。 |
