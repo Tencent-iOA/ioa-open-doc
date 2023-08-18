@@ -3,14 +3,14 @@
 
 
 
-添加多个准入MAC白名单
+添加多个准入MAC白名单，私有化调用path为：capi/inac/CreateBatchMacWhite
 
 ## 2. 输入参数
 
 
 | 参数名称 | 必选 | 类型 | 描述 |
 |---------|---------|---------|---------|
-| MacWhites.N | 否 | Array of [MacWhite](/开放API/云规范接口/版本：2022-06-01/数据结构.md#MacWhite) | 白名单列表 |
+| MacWhites.N | 否 | Array of [MacWhites](/开放API/云规范接口/版本：2022-06-01/数据结构.md#MacWhites) | <strong><font color="blue"></font></strong>白名单列表<br/>示例值：{“Mac”:"AA:AA:AA:CC:CC:CC"} |
 
 ## 3. 输出参数
 
