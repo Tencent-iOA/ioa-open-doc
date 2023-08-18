@@ -20,7 +20,7 @@
 
 附：内置登录页面效果
 
-<img src="./assets/image-login-1.png" alt="image-login-1" style="zoom:20%;border:1px solid #ddd;"/><img src="./assets/image-login-2.png" alt="image-login-2" style="zoom:20%;border:1px solid #ddd;"/><img src="./assets/image-login-3.png" alt="image-login-3" style="zoom:20%;border:1px solid #ddd;"/>
+<img src="https://github.com/Tencent-iOA/ioa-open-doc/raw/master/resource/mobilesdk/image-login-1.png" alt="image-login-1" style="zoom:20%;border:1px solid #ddd;"/><img src="https://github.com/Tencent-iOA/ioa-open-doc/raw/master/resource/mobilesdk/image-login-2.png" alt="image-login-2" style="zoom:20%;border:1px solid #ddd;"/><img src="https://github.com/Tencent-iOA/ioa-open-doc/raw/master/resource/mobilesdk/image-login-3.png" alt="image-login-3" style="zoom:20%;border:1px solid #ddd;"/>
 
 ## 集成指导
 
@@ -28,7 +28,7 @@
 
 （以Android为例）
 
-![sdk.drawio](./assets/sdk.drawio.png)
+![sdk.drawio](https://github.com/Tencent-iOA/ioa-open-doc/raw/master/resource/mobilesdk/sdk.drawio.png)
 
 
 
@@ -127,15 +127,15 @@ public class DDShareActivity extends Activity implements IDDAPIEventHandler {
 
 主工程新建一个Target，选择`Network Extension` ， 同时`Provider Type`选择**Packet Tunnel**
 
-<img src="./assets/image-20211206105954801.png" alt="image-20211206105954801" style="zoom:50%;" />
+<img src="https://github.com/Tencent-iOA/ioa-open-doc/raw/master/resource/mobilesdk/image-20211206105954801.png" alt="image-20211206105954801" style="zoom:50%;" />
 
-<img src="./assets/image-20211206110032298.png" alt="image-20211206110032298" style="zoom:50%;" />
+<img src="https://github.com/Tencent-iOA/ioa-open-doc/raw/master/resource/mobilesdk/image-20211206110032298.png" alt="image-20211206110032298" style="zoom:50%;" />
 
 **2、关闭Bitcode**
 
 主工程和Network Extension的`Build Settings` - `Build Options`中，将`Enable Bitcode`设置为**No**
 
-<img src="./assets/image-20211206110211986.png" alt="image-20211206110211986" style="zoom:50%;" />
+<img src="https://github.com/Tencent-iOA/ioa-open-doc/raw/master/resource/mobilesdk/image-20211206110211986.png" alt="image-20211206110211986" style="zoom:50%;" />
 
 **3、配置Capabilities**
 
@@ -144,7 +144,7 @@ public class DDShareActivity extends Activity implements IDDAPIEventHandler {
 - App Groups内容为申请时定义好的group
 - Network Extensions一项中，开启**Packet Tunnel**
 
-![](./assets/capability.png)
+![](https://github.com/Tencent-iOA/ioa-open-doc/raw/master/resource/mobilesdk/capability.png)
 
 **4、配置Info.plist**
 
@@ -163,11 +163,11 @@ public class DDShareActivity extends Activity implements IDDAPIEventHandler {
 
 - 配置跳转 Scheme: LSApplicationQueriesSchemes Key 下添加 lark
 
-<img src="./assets/larksso1.png" alt="larksso1" style="zoom:50%;" />
+<img src="https://github.com/Tencent-iOA/ioa-open-doc/raw/master/resource/mobilesdk/larksso1.png" alt="larksso1" style="zoom:50%;" />
 
 - 配置飞书回跳 URL：URL types Key 下添加注册时申请到的 app_id （例如：clia0988c0addf81013），注意需要去掉 app_id 中的下划线
 
-<img src="./assets/larksso2.png" alt="larksso2" style="zoom:50%;" />
+<img src="https://github.com/Tencent-iOA/ioa-open-doc/raw/master/resource/mobilesdk/larksso2.png" alt="larksso2" style="zoom:50%;" />
 
 钉钉配置
 
@@ -2399,4 +2399,9 @@ pod install
 	</tbody>
 </table>
 
-###   
+###  
+
+#### 附件
+1、[内置登录页面效果演示](https://github.com/Tencent-iOA/ioa-open-doc/raw/master/resource/mobilesdk/%E9%99%84%EF%BC%9A%E5%86%85%E7%BD%AE%E7%99%BB%E5%BD%95%E9%A1%B5%E9%9D%A2%E6%95%88%E6%9E%9C%E6%BC%94%E7%A4%BA.mp4)
+
+2、[身份认证服务接口文档](https://github.com/Tencent-iOA/ioa-open-doc/raw/master/resource/mobilesdk/%E9%99%84%EF%BC%9A%E8%BA%AB%E4%BB%BD%E8%AE%A4%E8%AF%81%E6%9C%8D%E5%8A%A1%E6%8E%A5%E5%8F%A3%E6%96%87%E6%A1%A3.pdf)
