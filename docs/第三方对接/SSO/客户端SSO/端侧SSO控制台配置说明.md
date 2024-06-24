@@ -4,9 +4,12 @@
 位置：系统设置 - 系统通用设置 - 证书管理 - SSO登录证书
 ![SSO登录证书](https://github.com/pengfeihuu/ioa-open-doc/raw/master/resource/sso/client/SSO登录证书.png)
 
-### 1.1.1 7.x版本
+### 1.1.2 7.x及以上版本
 位置：策略中心 - 身份安全策略 - 认证安全 - SSO管理
 ![SSO管理](https://github.com/pengfeihuu/ioa-open-doc/raw/master/resource/sso/client/SSO管理.png)
+
+### 1.1.3 SaaS 版本
+位置：策略中心 - 身份安全策略 - 认证安全 - SSO管理
 
 ## 1.2 证书获取
 如果客户需要自己的业务系统也通过ioa进行快速sso单点登陆，那么需要客户提供一个解析到127.0.0.1的域名，并申请有效的ca认证证书提供给ioa。注意：域名和证书由用户提供，腾讯只提供技术支持。
