@@ -6,9 +6,9 @@
 > c. 综合上述 a 获取的账号组织分组结构，和 b 获取的账号信息，按树结构组织后，即为 iOA 侧全量的账号组织架构和账号信息
 
 如果使用的 SaaS iOA，可按如下方法获取：
-> a. 调用接口 [DescribeRootAccountGroup]() 获取账号组织架构的根分组Id<br/>
-> b. 调用接口 [DescribeAccountGroups]()，传入根分组Id，分页逐层获取整颗账号组织架构分组树<br/>
-> c. 依次根据账号组织架构的分组Id，调用 [DescribeLocalAccounts]()，获取该分组下的直接账号
+> a. 调用接口 [DescribeRootAccountGroup](https://cloud.tencent.com/document/api/1092/107709) 获取账号组织架构的根分组Id<br/>
+> b. 调用接口 [DescribeAccountGroups](https://cloud.tencent.com/document/api/1092/107711)，传入根分组Id，分页逐层获取整颗账号组织架构分组树<br/>
+> c. 依次根据账号组织架构的分组Id，调用 [DescribeLocalAccounts](https://cloud.tencent.com/document/api/1092/107710)，获取该分组下的直接账号
 
 # 2、iOA 目录的概念是什么，如何通过账号信息判定属于哪个目录
 iOA 支持多目录，这里的目录对应的是账号组织架构根分组下的一级分组。
