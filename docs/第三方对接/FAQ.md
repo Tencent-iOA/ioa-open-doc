@@ -30,14 +30,13 @@ c. 账号menu均挂载在一个共同的根下（如1.x.y），IdPathArr[1]即�
 > b. 对要加密的字段，如`Password`字段进行 rsa 加密<br/>
 
 以下是一段`python`示例代码：
-```python
+```
 def encyptPassword(password):
 	data = DoApiRequest(action='DescribePublicEncryptKey')
 	PublicEncryptKey = data[0]["Response"]["Data"]["PublicEncryptKey"]
 	public_key = base64.b64decode(PublicEncryptKey.encode("utf-8"))
 	if public_key.startswith("\n".encode("utf-8")) and not public_key.endswith("\n".encode("utf-8")):
 		public_key = (public_key + "\n".encode("utf-8"))[1:]
-
 	rsa_pubkey = RSA.import_key(public_key)
 	cipher_pub = PKCS1_v1_5.new(rsa_pubkey)
 	ciphervalue_enc = base64.b64encode(cipher_pub.encrypt(password.encode("utf-8")))
