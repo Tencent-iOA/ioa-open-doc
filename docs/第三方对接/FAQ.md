@@ -38,6 +38,15 @@ def encyptPassword(password):
 	rsa_pubkey = RSA.import_key(public_key)
 	cipher_pub = PKCS1_v1_5.new(rsa_pubkey)
 	ciphervalue_enc = base64.b64encode(cipher_pub.encrypt(password.encode("utf-8")))
-
 	return ciphervalue_enc.decode()
 ```
+
+### 4、如何获取`云规范接口`签名所需的 Secret 信息
+Secret信息，等价于相应的管理员权限，注意保密防泄露。
+获取Secret方法如下：
+> a. 检查控制台左边栏菜单"系统设置-第三方对接"下，是否展示有"API接口管理"页面，如无有两种可能：<br/>
+	1）当前登录控制台的管理员是非超管，而超管又未给当前管理员分配"API接口管理员"页面权限 - 联系超管授权<br/>
+	2）部分历史版本，该页面是隐藏不开放页面 - 联系 iOA 侧放通<br/>
+b. 在"系统设置-第三方对接-API接口管理"页面，点击"添加API凭证"，从而生成与当前管理员权限绑定的SecretId和SecretKey信息
+
+注：iOA 侧服务人员，如何开放"API接口管理"页面，参见内部文档：https://iwiki.woa.com/p/4010953746
