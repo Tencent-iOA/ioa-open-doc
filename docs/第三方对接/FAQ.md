@@ -50,3 +50,23 @@ Secret信息，等价于相应的管理员权限，注意保密防泄露。
 b. 在"系统设置-第三方对接-API接口管理"页面，点击"添加API凭证"，从而生成与当前管理员权限绑定的SecretId和SecretKey信息
 
 注：iOA 侧服务人员，如何开放"API接口管理"页面，参见内部文档：https://iwiki.woa.com/p/4010953746
+
+### 5、云规范接口API调用，如何判断接口响应是成功，还是出错
+* `Response.Error.Code`非空<br/>
+表示出错。此时先结合`Response.Error.Code`和`Response.Error.Message`的提示排查错误，若仍无法定位，可提供`Response.RequestId`，与相关服务日志进一步定位出错原因。
+* `Response.Error.Code`空<br/>
+表示成功。若该接口有额外数据响应，数据位于`Response.Data`。
+
+### 6、API调用，HTTP码返回`401`的常见原因
+#### 1）common_rsp.msg 返回 `Missing related consumer`
+提供的SecretId、SecretKey与连接的控制台服务器不相配，登录控制台去检查提供的AKSK信息是否正确。
+#### 2）common_rsp.msg 返回 `Invalid signature`
+按SDK文档，检查传入的信息是否充分，如API版本号、时间戳等字段。
+#### 3）common_rsp.msg 返回 `timestamp is timeout`
+可能原因有：
+* a. 调用端与服务端时钟不同步
+* b. 调用端HTTP请求头里的X-TC-Timestamp，没有按实际调用时间（UNIX时间戳格式）来传递<br/>
+
+排查方法：
+针对时钟不同步问题，检查总控集群root角色的所有服务器时钟，这些服务器的时钟需要一致，且发起API调用的客户机时钟也需要与服务器保持一致。
+同时，调用端，打印下出错时HTTP请求头信息，并提供RequestId，以便与服务器请求对账，进一步定位问题。
