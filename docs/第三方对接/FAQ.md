@@ -61,7 +61,7 @@ b. 在"系统设置-第三方对接-API接口管理"页面，点击"添加API凭
 #### 1）common_rsp.msg 返回 `Missing related consumer`
 提供的SecretId、SecretKey与连接的控制台服务器不相配，登录控制台去检查提供的AKSK信息是否正确。
 #### 2）common_rsp.msg 返回 `Invalid signature`
-按SDK文档，检查传入的信息是否充分，如API版本号、时间戳等字段。
+按SDK文档，检查传入的信息是否充分，如API版本号（X-TC-Version）、时间戳（X-TC-Timestamp）等字段。
 #### 3）common_rsp.msg 返回 `timestamp is timeout`
 可能原因有：
 * a. 调用端与服务端时钟不同步
