@@ -40,7 +40,8 @@
 | [SaveAccountGroupResources](/document/product/1679/77532?!preview&preview_docmenu=1&lang=cn&!document=1) | 保存账户组资源 | 公司内网展示 |
 | [SaveAccountResources](/document/product/1679/77533?!preview&preview_docmenu=1&lang=cn&!document=1) | 保存账户资源 | 公司内网展示 |
 | [SaveVirtualGroupResources](/document/product/1679/77531?!preview&preview_docmenu=1&lang=cn&!document=1) | 保存账户虚拟组资源 | 公司内网展示 |
-| [MoveBusinessResource](/document/product/1679/76845?!preview&preview_docmenu=1&lang=cn&!document=1) | 移动复制业务资源 | 公司内网展示 |
+| [MoveBusinessResource](/document/product/1679/750401?!preview&preview_docmenu=1&lang=cn&!document=1) | 移动复制业务资源 | 公司内网展示 |
+| [DescribeUid](/document/product/1679/750400?!preview&preview_docmenu=1&lang=cn&!document=1) | 根据userid、menuid获取uid | 产品内部展示 |
 
 ## 账户管理
 
