@@ -80,4 +80,11 @@
 |-|-|-|
 | [DescribePublicEncryptKey](/document/product/1679/77383?!preview&preview_docmenu=1&lang=cn&!document=1) | 获取加密公钥 | 公司内网展示 |
 
+## 数据安全中心相关接口
+
+| 接口名称 | 接口功能 | 可见状态 |
+|-|-|-|
+| [DescribeDataMapScanPolicyList](/document/product/1679/826286?!preview&preview_docmenu=1&lang=cn&!document=1) | 查询数据地图扫描策略列表 | 产品内部展示 |
+| [DescribeDataMapScanResults](/document/product/1679/826653?!preview&preview_docmenu=1&lang=cn&!document=1) | 查询数据地图扫描结果 | 产品内部展示 |
+
 >! 以上给出的接口频率限制维度为`API + 接入地域 + 子账号`，有关限频更多说明参考：[API 频率限制说明](https://cloud.tencent.com/document/product/1278/109059)
