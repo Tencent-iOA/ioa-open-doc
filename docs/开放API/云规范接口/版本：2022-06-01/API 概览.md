@@ -65,6 +65,19 @@
 | [DescribeAccountBindDevices](/document/product/1679/88423?!preview&preview_docmenu=1&lang=cn&!document=1) | 获取账号绑定设备列表 | 产品内部展示 |
 | [RemoveAccountBindDevice](/document/product/1679/88461?!preview&preview_docmenu=1&lang=cn&!document=1) | 解除账号绑定设备 | 产品内部展示 |
 | [CreateCustomFields](/document/product/1679/88217?!preview&preview_docmenu=1&lang=cn&!document=1) | 用户自定义字段数据推送接口 | 产品内部展示 |
+| [CreateDeviceVirtualGroup](/document/product/1679/826202?!preview&preview_docmenu=1&lang=cn&!document=1) | 创建终端自定义分组 | 官网公开展示 |
+| [DeleteAutoVirtualGroupRule](/document/product/1679/826211?!preview&preview_docmenu=1&lang=cn&!document=1) | 删除自动划分规则 | 公司内网展示 |
+| [DeleteDeviceVirtualGroup](/document/product/1679/77635?!preview&preview_docmenu=1&lang=cn&!document=1) | 删除终端自定义分组 | 公司内网展示 |
+| [DescribeAutoVirtualGroupRule](/document/product/1679/88241?!preview&preview_docmenu=1&lang=cn&!document=1) | 查询自动划分规则 | 公司内网展示 |
+| [DescribeAutoVirtualGroupRuleItems](/document/product/1679/824949?!preview&preview_docmenu=1&lang=cn&!document=1) | 获取支持自动划分规则的字段 | 公司内网展示 |
+| [DescribeDeviceVirtualGroups](/document/product/1679/77629?!preview&preview_docmenu=1&lang=cn&!document=1) | 查询终端自定义分组列表 | 公司内网展示 |
+| [DescribeVirtualDevices](/document/product/1679/826050?!preview&preview_docmenu=1&lang=cn&!document=1) | 展示自定义分组终端列表 | 公司内网展示 |
+| [ModifyDeviceVirtualGroup](/document/product/1679/77636?!preview&preview_docmenu=1&lang=cn&!document=1) | 修改终端自定义分组 | 公司内网展示 |
+| [ModifyVirtualDeviceGroups](/document/product/1679/77663?!preview&preview_docmenu=1&lang=cn&!document=1) | 终端自定义分组增减终端 | 公司内网展示 |
+| DescribeDownloadVirtualDevices | 自定义分组（内置分组）终端列表导出接口 | 产品内部展示 |
+| DescribeInsideGroupStatistics | 内置分组统计数据的查询接口 | 产品内部展示 |
+| MarkInsideGroupManually | 手动标记内置分组接口 | 产品内部展示 |
+| ModifyVirtualGroupDevices | 批量处理终端自定义分组增减终端 | 公司内网展示 |
 
 ## 准入相关接口
 
