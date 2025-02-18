@@ -75,7 +75,7 @@
 | [ModifyDeviceVirtualGroup](/document/product/1679/77636?!preview&preview_docmenu=1&lang=cn&!document=1) | 修改终端自定义分组 | 公司内网展示 |
 | [ModifyVirtualDeviceGroups](/document/product/1679/77663?!preview&preview_docmenu=1&lang=cn&!document=1) | 终端手动自定义分组增减终端 | 公司内网展示 |
 | DescribeDownloadVirtualDevices | 自定义分组（内置分组）终端列表导出接口 | 产品内部展示 |
-| DescribeInsideGroupStatistics | 内置分组统计数据的查询接口 | 产品内部展示 |
+| [DescribeInsideGroupStatistics](/document/product/1679/923791?!preview&preview_docmenu=1&lang=cn&!document=1) | 内置分组统计数据的查询接口 | 产品内部展示 |
 | MarkInsideGroupManually | 手动标记内置分组接口 | 产品内部展示 |
 | ModifyVirtualGroupDevices | 批量处理终端自定义分组增减终端 | 公司内网展示 |
 
