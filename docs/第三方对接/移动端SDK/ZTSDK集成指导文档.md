@@ -22,6 +22,21 @@
 
 <img src="https://github.com/Tencent-iOA/ioa-open-doc/raw/master/resource/mobilesdk/image-login-1.png" alt="image-login-1" style="zoom:20%;border:1px solid #ddd;"/><img src="https://github.com/Tencent-iOA/ioa-open-doc/raw/master/resource/mobilesdk/image-login-2.png" alt="image-login-2" style="zoom:20%;border:1px solid #ddd;"/><img src="https://github.com/Tencent-iOA/ioa-open-doc/raw/master/resource/mobilesdk/image-login-3.png" alt="image-login-3" style="zoom:20%;border:1px solid #ddd;"/>
 
+### 可能需要关注的上架问题
+1、Android 建议走自建下载页面下载。如下载页面是互联网可访问的，出于合规要求建议客户到工信部申请备案号。未申请备案后续如遇到工信部通报，风险需客户自行承担。（备案链接：https://beian.miit.gov.cn/#/home ）
+不建议上架电子市场，国内电子市场上架流程不完全相同，申请所需材料iOA无法提供协助。
+
+2、【重点关注】iOS的分发/上架问题需要提前在「集成SDK前」评估可行性，需要集成App自行完成评估。上架流程iOA无其他途径/无能力提供协助。
+
+2.1、iOS 如客户有苹果企业帐号可实现InHouse类型企业内分发。
+
+2.2、如无企业帐号，只能通过上架AppStore上架：
+
+（1）根据AppStore上架苹果要求，要有开发者帐号、（特别地按照国内的法规「苹果要求」提供）VPN资质（牌照，一般是向工信部申请的；iOA使用的VPN牌照是腾讯云的）；
+
+（2）需客户到工信部申请备案号。（备案链接：https://beian.miit.gov.cn/#/home ）
+
+
 ## 集成指导
 
 ### SDK功能集成流程示例
