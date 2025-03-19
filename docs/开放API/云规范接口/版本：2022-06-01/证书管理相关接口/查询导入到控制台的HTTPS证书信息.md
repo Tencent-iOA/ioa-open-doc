@@ -3,7 +3,7 @@
 
 
 
-获取证书管理里的HTTPS证书列表。私有化调用path为：capi/WebGateway/DescribeCertificates
+获取证书管理里的HTTPS证书列表。私有化从8.7版本开始支持，调用path为：capi/WebGateway/DescribeCertificates
 
 ## 2. 输入参数
 
