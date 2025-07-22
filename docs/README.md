@@ -1,9 +1,5 @@
 <font color=red>[**推荐加入“iOA 开放文档”知识库，基于知识库进行AI问答**](https://ima.qq.com/wiki/?shareId=9908f59c41039c23051bfa6807dbbcc84ad90b280076e11dc967e06074018ca4)</font>
 
-![AI知识库1](https://github.com/pengfeihuu/ioa-open-doc/raw/master/resource/ima/code.png)
-![AI知识库2](/raw/master/resource/ima/code.png)
-![AI知识库3](../resource/ima/code.png)
-
 - [开放API](开放API/)
   - [云规范接口](开放API/云规范接口/)
     - [版本：2022-06-01](开放API/云规范接口/版本：2022-06-01/)
