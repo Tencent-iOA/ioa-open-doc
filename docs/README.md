@@ -1,5 +1,5 @@
 推荐加入“iOA 开放文档”知识库，基于知识库进行AI问答：
-![知识库分享码](https://github.com/pengfeihuu/ioa-open-doc/raw/master/resource/ima/invite_code.png)
+![知识库分享码](https://github.com/Tencent-iOA/ioa-open-doc/blob/master/resource/ima/invite_code.png)
 
 - [开放API](开放API/)
   - [云规范接口](开放API/云规范接口/)

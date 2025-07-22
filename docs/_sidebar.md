@@ -1,4 +1,4 @@
-[推荐加入“iOA 开放文档”知识库，基于知识库进行AI问答](https://ima.qq.com/wiki/?shareId=9908f59c41039c23051bfa6807dbbcc84ad90b280076e11dc967e06074018ca4)
+[推荐使用iOA开放文档AI](https://ima.qq.com/wiki/?shareId=9908f59c41039c23051bfa6807dbbcc84ad90b280076e11dc967e06074018ca4)
 
 - [开放API](开放API/)
   - [云规范接口](开放API/云规范接口/)
