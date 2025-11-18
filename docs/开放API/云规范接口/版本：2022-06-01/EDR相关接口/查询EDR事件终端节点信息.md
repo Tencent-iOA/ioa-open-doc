@@ -1,12 +1,11 @@
 ## 1. 接口描述
 
-查询EDR事件终端节点信息，私有化调用path为：/capi/EDR/DescribeEventAttackGraphTermNode
+查询EDR事件终端节点信息，私有化调用path为：/capi/EDR/DescribeEventAttackGraphTermNode，从8.6P1版本开始支持
 
 ## 2. 输入参数
 
 | 参数名称 | 必选 | 类型 | 描述 |
 |---------|---------|---------|---------|
-| DomainInstanceId | 否 | String | 管理域实例ID，用于CAM管理域权限分配。若企业未进行管理域的划分，可直接传入根域"1"，此时表示针对当前企业的全部设备和账号进行接口CRUD，具体CRUD的影响范围限制于相应接口的入参。<br/>示例值：1 |
 | EventId | 否 | Integer | 事件ID |
 | NodeId | 否 | Integer | 节点ID（优先） |
 | TerminalId | 否 | Integer | 终端ID（可选） |

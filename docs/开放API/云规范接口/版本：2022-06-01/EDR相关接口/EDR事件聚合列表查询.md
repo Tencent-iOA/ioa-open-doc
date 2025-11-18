@@ -1,12 +1,11 @@
 ## 1. 接口描述
 
-EDR事件聚合列表查询，私有化调用path为：/capi/EDR/ListEDRIncidents
+EDR事件聚合列表查询，私有化调用path为：/capi/EDR/ListEDRIncidents，从8.6P1版本开始支持
 
 ## 2. 输入参数
 
 | 参数名称 | 必选 | 类型 | 描述 |
 |---------|---------|---------|---------|
-| DomainInstanceId | 否 | String | 管理域实例ID，用于CAM管理域权限分配。若企业未进行管理域的划分，可直接传入根域"1"，此时表示针对当前企业的全部设备和账号进行接口CRUD，具体CRUD的影响范围限制于相应接口的入参。<br/>示例值：1 |
 | Condition | 否 | [Condition](/开放API/云规范接口/版本：2022-06-01/数据结构.md#Condition) | 滤条件、分页参数<br/><li>LastTime - string - 是否必填：是 - 操作符: egt,gt,elt,lt - 排序支持：是 - 按时间过滤。</li><li>RiskLevel - int - 是否必填：否 - 操作符: eq - 排序支持：否 - 按风险等级过滤。</li><li>SurveyStatus - int - 是否必填：否 - 操作符: eq - 排序支持：否 - 按调查状态过滤。</li><li>JudgStatus - int - 是否必填：否 - 操作符: eq - 排序支持：否 - 按研判状态过滤。</li><li>AttckTech - array - 是否必填：否 - 操作符: array_any - 排序支持：否 - 按ATTCK过滤。</li> |
 
 ## 3. 输出参数
@@ -115,8 +114,6 @@ X-TC-Action: ListEDRIncidents
 ```
 
 ## 5. 错误码
-
-以下仅列出了接口业务逻辑相关的错误码，其他错误码详见 [公共错误码](/document/product/1679/44019?!preview&preview_docmenu=1&lang=cn&!document=1#.E5.85.AC.E5.85.B1.E9.94.99.E8.AF.AF.E7.A0.81)。
 
 | 错误码 | 描述 |
 |---------|---------|
