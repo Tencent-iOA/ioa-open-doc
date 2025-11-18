@@ -1,12 +1,11 @@
 ## 1. 接口描述
 
-查询EDR受威胁终端列表，支持分页和参数筛选，私有化调用path为：/capi/EDR/ListThreatenedTerminals
+查询EDR受威胁终端列表，支持分页和参数筛选，私有化调用path为：/capi/EDR/ListThreatenedTerminals，从8.6P1版本开始支持
 
 ## 2. 输入参数
 
 | 参数名称 | 必选 | 类型 | 描述 |
 |---------|---------|---------|---------|
-| DomainInstanceId | 否 | String | 管理域实例ID，用于CAM管理域权限分配。若企业未进行管理域的划分，可直接传入根域"1"，此时表示针对当前企业的全部设备和账号进行接口CRUD，具体CRUD的影响范围限制于相应接口的入参。<br/>示例值：1 |
 | Condition | 否 | [Condition](/开放API/云规范接口/版本：2022-06-01/数据结构.md#Condition) | 滤条件、分页参数<br/><li>TerminalGroupId - int - 是否必填：否 - 操作符: eq  - 排序支持：否- 按终端组过滤。</li><li>LastEventTime - string - 是否必填：是 - 操作符: egt,gt,elt,lt - 排序支持：是 - 按最后告警时间过滤。</li><li>Mid - string - 是否必填：否 - 操作符: eq  - 排序支持：否 - 按终端Mid过滤。</li><li>OccurTime - string - 是否必填：否 - 操作符: egt,gt,elt,lt - 排序支持：否 - 按告警发生时间过滤。</li><li>RiskLevel - int - 是否必填：否 - 操作符: eq - 排序支持：否 - 按风险等级过滤。</li><li>RiskTags - array - 是否必填：否 - 操作符: array_any - 排序支持：否 - 按风险标签过滤。</li><li>TerminalStatus - int - 是否必填：否 - 操作符: eq - 排序支持：否 - 按终端状态过滤。</li><li>AttackResult - int - 是否必填：否 - 操作符: eq - 排序支持：否 - 按终端攻击结果过滤。</li><li>EventName - string - 是否必填：否 - 操作符: eq,like - 排序支持：否 - 按告警名称过滤。</li><li>SrcIp - string - 是否必填：否 - 操作符: eq - 排序支持：否 - 按源IP过滤。</li><li>DistIp - string - 是否必填：否 - 操作符: eq - 排序支持：否 - 按目标IP过滤。</li><li>SrcFileName - string - 是否必填：否 - 操作符: eq - 排序支持：否 - 按源文件名过滤。</li><li>SrcFileMd5 - string - 是否必填：否 - 操作符: eq - 排序支持：否 - 按源文件MD5过滤。</li><li>DistFileName - string - 是否必填：否 - 操作符: eq - 排序支持：否 - 按目标文件名过滤。</li><li>DistFileMd5 - string - 是否必填：否 - 操作符: eq - 排序支持：否 - 按目标文件MD5过滤。</li> |
 
 ## 3. 输出参数
@@ -127,8 +126,6 @@ X-TC-Action: ListThreatenedTerminals
 ```
 
 ## 5. 错误码
-
-以下仅列出了接口业务逻辑相关的错误码，其他错误码详见 [公共错误码](/document/product/1679/44019?!preview&preview_docmenu=1&lang=cn&!document=1#.E5.85.AC.E5.85.B1.E9.94.99.E8.AF.AF.E7.A0.81)。
 
 | 错误码 | 描述 |
 |---------|---------|

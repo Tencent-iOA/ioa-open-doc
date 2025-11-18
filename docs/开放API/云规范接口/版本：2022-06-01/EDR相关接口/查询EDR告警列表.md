@@ -1,12 +1,11 @@
 ## 1. 接口描述
 
-查询EDR事件列表，支持分页和按参数筛选，私有化调用path为：/capi/EDR/ListEvents
+查询EDR事件列表，支持分页和按参数筛选，私有化调用path为：/capi/EDR/ListEvents，从8.6P1版本开始支持
 
 ## 2. 输入参数
 
 | 参数名称 | 必选 | 类型 | 描述 |
 |---------|---------|---------|---------|
-| DomainInstanceId | 否 | String | 管理域实例ID，用于CAM管理域权限分配。若企业未进行管理域的划分，可直接传入根域"1"，此时表示针对当前企业的全部设备和账号进行接口CRUD，具体CRUD的影响范围限制于相应接口的入参。<br/>示例值：1 |
 | Condition | 否 | [Condition](/开放API/云规范接口/版本：2022-06-01/数据结构.md#Condition) | 滤条件、分页参数<br/><li>OccurTime - string - 是否必填：是 - 操作符: egt,gt,elt,lt - 排序支持：是 - 按告警发生时间过滤。</li><li>RiskLevel - int - 是否必填：否 - 操作符: eq - 排序支持：否 - 按风险等级过滤。</li><li>RiskTags - array - 是否必填：否 - 操作符: array_any - 排序支持：否 - 按风险标签过滤。</li><li>DisposalStatus - int - 是否必填：否 - 操作符: eq - 排序支持：否 - 按处置状态过滤。</li><li>ActionName - string - 是否必填：否 - 操作符: eq - 排序支持：否 - 按事件动作过滤。</li><li>EventName - string - 是否必填：否 - 操作符: eq,like - 排序支持：否 - 按告警名称过滤。</li><li>SrcIp - string - 是否必填：否 - 操作符: eq - 排序支持：否 - 按源IP过滤。</li><li>DistIp - string - 是否必填：否 - 操作符: eq - 排序支持：否 - 按目标IP过滤。</li><li>SrcFileName - string - 是否必填：否 - 操作符: eq - 排序支持：否 - 按源文件名过滤。</li><li>SrcFileMd5 - string - 是否必填：否 - 操作符: eq - 排序支持：否 - 按源文件MD5过滤。</li><li>DistFileName - string - 是否必填：否 - 操作符: eq - 排序支持：否 - 按目标文件名过滤。</li><li>DistFileMd5 - string - 是否必填：否 - 操作符: eq - 排序支持：否 - 按目标文件MD5过滤。</li> |
 
 ## 3. 输出参数

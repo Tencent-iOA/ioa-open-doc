@@ -1,12 +1,11 @@
 ## 1. 接口描述
 
-EDR获取证据列表，私有化调用path为：/capi/EDR/DescribeEvidences
+EDR获取证据列表，私有化调用path为：/capi/EDR/DescribeEvidences，从8.6P1版本开始支持
 
 ## 2. 输入参数
 
 | 参数名称 | 必选 | 类型 | 描述 |
 |---------|---------|---------|---------|
-| DomainInstanceId | 否 | String | 管理域实例ID，用于CAM管理域权限分配。若企业未进行管理域的划分，可直接传入根域"1"，此时表示针对当前企业的全部设备和账号进行接口CRUD，具体CRUD的影响范围限制于相应接口的入参。<br/>示例值：1 |
 | Condition | 否 | [Condition](/开放API/云规范接口/版本：2022-06-01/数据结构.md#Condition) | 滤条件、分页参数<br/><li>IncidentId - int - 是否必填：否 - 操作符: eq - 排序支持：是 - 按事件ID过滤。</li><li>EventId - int - 是否必填：否 - 操作符: eq - 排序支持：否 - 按告警ID过滤。</li> |
 
 ## 3. 输出参数

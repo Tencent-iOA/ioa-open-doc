@@ -1,6 +1,6 @@
 ## 1. 接口描述
 
-EDR事件聚合详情查询，私有化调用path为：/capi/EDR/DescribeEDRIncident
+EDR事件聚合详情查询，私有化调用path为：/capi/EDR/DescribeEDRIncident，从8.6P1版本开始支持
 
 ## 2. 输入参数
 
