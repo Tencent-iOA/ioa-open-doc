@@ -67,6 +67,11 @@ X-TC-Action: DescribeEvent
 
 
 
+
+
+
+
+
 ,\"ProcElevationType\":1,\"ProcExited\":false,\"ProcGuid\":\"3708630519874067512\",\"ProcIntegrity\":6,\"ProcPid\":7224,\"ProcTrust\":\"Trust\",\"ProcUserName\":\"SYSTEM\",\"SessionId\":5,\"TavSign\":\"\",\"TrojanName\":\"\",\"Type\":\"Proc\"},\"TenantId\":\"251272654\",\"Uuid\":\"ad3429f7d18e51fd89b6c9a5bce7407b\",\"Version\":1,\"_id\":\"FdnZj5oBPbqRdzwpuLqN\"}",
       "Rule": {
         "Id": 70198,
