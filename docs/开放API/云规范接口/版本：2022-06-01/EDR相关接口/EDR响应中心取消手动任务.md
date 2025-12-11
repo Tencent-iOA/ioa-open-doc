@@ -1,6 +1,6 @@
 ## 1. 接口描述
 
-EDR响应中心取消手动任务，私有化调用path为：/capi/EDR/ModifyCancelEDRRespondTask
+EDR响应中心取消手动任务，私有化调用path为：/capi/EDR/ModifyCancelEDRRespondTask，从8.6P1版本开始支持
 
 ## 2. 输入参数
 

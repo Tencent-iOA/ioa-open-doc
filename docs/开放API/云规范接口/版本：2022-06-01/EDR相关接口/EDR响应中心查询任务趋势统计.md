@@ -1,6 +1,6 @@
 ## 1. 接口描述
 
-EDR响应中心查询任务趋势统计，私有化调用path为：/capi/EDR/DescribeEDRRespondTaskTrending
+EDR响应中心查询任务趋势统计，私有化调用path为：/capi/EDR/DescribeEDRRespondTaskTrending，从8.6P1版本开始支持
 
 ## 2. 输入参数
 
