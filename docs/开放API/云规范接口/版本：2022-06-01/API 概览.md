@@ -78,6 +78,10 @@
 | [DescribeInsideGroupStatistics](/document/product/1679/923791?!preview&preview_docmenu=1&lang=cn&!document=1) | 内置分组统计数据的查询接口 | 产品内部展示 |
 | MarkInsideGroupManually | 手动标记内置分组接口 | 产品内部展示 |
 | ModifyVirtualGroupDevices | 批量处理终端自定义分组增减终端 | 公司内网展示 |
+| [DescribeRootGroupId](/document/product/1679/927804?!preview&preview_docmenu=1&lang=cn&!document=1) | 查询顶级终端分组id | 公司内网展示 |
+| [DescribeDeviceChildGroups](/document/product/1679/928324?!preview&preview_docmenu=1&lang=cn&!document=1) | 查询设备组子分组 | 官网公开展示 |
+| [DescribeDeviceGroups](/document/product/1679/77292?!preview&preview_docmenu=1&lang=cn&!document=1) | 查询终端分组列表 | 公司内网展示 |
+
 
 ## 准入相关接口
 
