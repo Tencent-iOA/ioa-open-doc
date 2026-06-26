@@ -20,6 +20,7 @@
 |PolicyNameEN |string |触发策略名称英文 | |
 |PolicyDescriptionEN |string |触发策略描述英文 | |
 |RiskLevel |int32 |风险等级 |1:低危<br>2:中危<br>3:高危 |
+|PolicyNature |int32 |触发策略属性 |0:探针<br>1:告警 |
 |AttackTech |[]string |ATT&CK战技术编号 |参见：https://attack.mitre.org/ |
 |Mid |string |终端mid | |
 |TerminalName |string |终端名称 | |
