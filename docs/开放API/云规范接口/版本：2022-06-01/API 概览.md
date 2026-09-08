@@ -90,6 +90,10 @@
 | [DescribeSwitchDeviceGroups](/document/product/1679/76861?!preview&preview_docmenu=1&lang=cn&!document=1) | 查询交换机分组信息 | 产品内部展示 |
 | [CreateBatchMacWhite](/document/product/1679/76862?!preview&preview_docmenu=1&lang=cn&!document=1) | 批量添加MAC白名单 | 产品内部展示 |
 | [CreateBatchSwitchDevice](/document/product/1679/76860?!preview&preview_docmenu=1&lang=cn&!document=1) | 批量添加交换机 | 产品内部展示 |
+| [BindINacMacDynamicVLANs](/document/product/1679/950949?!preview&preview_docmenu=1&lang=cn&!document=1) | 批量绑定Mac动态VLAN | 产品内部展示 |
+| [DeleteINacMacDynamicVLAN](/document/product/1679/950954?!preview&preview_docmenu=1&lang=cn&!document=1) | 删除MAC动态VLAN | 产品内部展示 |
+| [DescribeINacMacDynamicVLANs](/document/product/1679/950950?!preview&preview_docmenu=1&lang=cn&!document=1) | 查询MAC动态VLAN列表 | 产品内部展示 |
+| [DescribeINacNetTypes](/document/product/1679/950972?!preview&preview_docmenu=1&lang=cn&!document=1) | 查询准入网络类型列表 | 产品内部展示 |
 
 ## 公共模块相关接口
 
